@@ -1,27 +1,21 @@
-@extends('layouts.app')
+<x-app-layout>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">{{ __('Dashboard') }}</div>
 
-@section('content')
-<main class="sm:container sm:mx-auto sm:mt-10">
-    <div class="w-full sm:px-6">
+                    <div class="card-body">
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                        @endif
 
-        @if (session('status'))
-            <div class="px-3 py-4 mb-4 text-sm text-green-700 bg-green-100 border border-t-8 border-green-600 rounded" role="alert">
-                {{ session('status') }}
+                        {{ __('You are logged in!') }}
+                    </div>
+                </div>
             </div>
-        @endif
-
-        <section class="flex flex-col break-words bg-white sm:border-1 sm:rounded-md sm:shadow-sm sm:shadow-lg">
-
-            <header class="px-6 py-5 font-semibold text-gray-700 bg-gray-200 sm:py-6 sm:px-8 sm:rounded-t-md">
-                {{ __('Dashboard') }}
-            </header>
-
-            <div class="w-full p-6">
-                <p class="text-gray-700">
-                    {{ __('You are logged in!') }}
-                </p>
-            </div>
-        </section>
+        </div>
     </div>
-</main>
-@endsection
+</x-app-layout>

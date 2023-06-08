@@ -17,8 +17,6 @@
 </head>
 <body>
     <div id="app">
-        @include('layouts.navigation')
-
         <main class="py-4">
             {{ $slot }}
         </main>

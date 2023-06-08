@@ -1,4 +1,4 @@
-# Laravel 8 支持多種佈景主題
+# Laravel 10 支持多種佈景主題
 
 引入 qirolab 的 laravel-themer 套件來擴增支持多種佈景主題，利用可自訂的佈景主題，讓您的想法付諸實現，Tailwind 是工具框架, 而其他的（Bootstrap、Bulma）則是用戶介面框架，都可以輕鬆大大地美化佈景主題。
 
@@ -24,9 +24,13 @@ $ php artisan make:theme
 ```sh
 $ php artisan migrate
 ```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
 ```sh
-$ npm install && npm run dev
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/register` 來進行註冊。
@@ -35,8 +39,8 @@ $ npm install && npm run dev
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/IWiUkSB.png)
+![](https://i.imgur.com/ZnxQcnv.png)
 > 自訂佈景主題
 
-![](https://i.imgur.com/BMjA1vY.png)
+![](https://i.imgur.com/DCzHdEa.png)
 > 建立新的帳號
