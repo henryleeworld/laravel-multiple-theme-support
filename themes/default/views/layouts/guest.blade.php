@@ -13,7 +13,7 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['themes/default/sass/app.scss'], 'default')
 </head>
 <body>
     <div id="app">
@@ -21,5 +21,6 @@
             {{ $slot }}
         </main>
     </div>
+    @vite(['themes/default/js/app.js'], 'default')
 </body>
 </html>
