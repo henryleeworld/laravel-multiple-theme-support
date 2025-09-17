@@ -23,7 +23,6 @@
             {{ $slot }}
         </main>
     </div>
-
     @vite(['themes/default/js/app.js'], 'default')
 </body>
 </html>

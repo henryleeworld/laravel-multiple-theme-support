@@ -1,4 +1,5 @@
 {
+    "$schema": "https://json.schemastore.org/package.json",
     "private": true,
     "type": "module",
     "scripts": {
@@ -6,15 +7,16 @@
         "build:default": "vite build --config themes/default/vite.config.js"
     },
     "devDependencies": {
-        "@vitejs/plugin-vue": "^5.0.4",
-        "axios": "^1.8.3",
+        "@vitejs/plugin-vue": "^6.0.1",
+        "axios": "^1.11.0",
         "bootstrap": "^4.6.0",
+        "concurrently": "^9.0.1",
         "jquery": "^3.5",
-        "laravel-vite-plugin": "^1.0",
+        "laravel-vite-plugin": "^2.0.0",
         "popper.js": "^1.16",
         "sass": "^1.32.1",
         "sass-loader": "^10.1.1",
-        "vite": "^5.0",
-        "vue": "^3.2.37"
+        "vite": "^7.0.4",
+        "vue": "^3.4.27"
     }
 }
